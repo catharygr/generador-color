@@ -10,41 +10,39 @@
 </head>
 
 <body>
-
+  <h1>Generador de Colores</h1>
+<div class="container">
   <header>
-    <label for="seleccionar-color">Seleccionar calor</label>
-    <input id="seleccionar-color" type="color">
+    <div>
+      <label for="seleccionar-color">Elige color</label>
+      <input id="seleccionar-color" type="color" value="#ff0000">
+    </div>
+    <div>
+      <label for="color-esquema">Colores deseados</label>
+      <select name="color-esquema" id="color-esquema">
+        <option value="monochrome">Monochrome</option>
+        <option value="monochrome-dark">Monochrome Dark</option>
+        <option value="monochrome-light">Monochrome Light</option>
+        <option value="analogic" selected>Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">Analogic Complement</option>
+        <option value="triad">Triad</option>
+        <option value="quad">Quad</option>
+      </select>
+    </div>
 
-    <label for="color-esquema">Esquema de colores deseados</label>
-    <select name="color-esquema" id="color-esquema">
-      <option value="monochrome">Monochrome</option>
-      <option value="monochrome-dark">Monochrome Dark</option>
-      <option value="monochrome-light">Monochrome Light</option>
-      <option value="analogic" selected>Analogic</option>
-      <option value="complement">Complement</option>
-      <option value="analogic-complement">Analogic Complement</option>
-      <option value="triad">Triad</option>
-      <option value="quad">Quad</option>
-    </select>
-
-    <button id="btn">Obtener paleta de color</button>
+    <button id="btn">Obtener colores</button>
   </header>
 
-  <main>
-    <div class="color" id="color-uno"></div>
-    <div class="color" id="color-dos"></div>
-    <div class="color" id="color-tres"></div>
-    <div class="color" id="color-cuatro"></div>
-    <div class="color" id="color-cinco"></div>
-  </main>
-  <footer>
-    <p class="color-code" id="color-code-uno">#F55A5A</p>
-    <p class="color-code" id="color-code-dos">#F55A5A</p>
-    <p class="color-code" id="color-code-tres">#F55A5A</p>
-    <p class="color-code" id="color-code-cuatro">#F55A5A</p>
-    <p class="color-code" id="color-code-cinco">#F55A5A</p>
-
+  <main id="main-color"></main>
+  <footer id="footer-hex">
+    <p class="color-code">Hex Code</p>
+    <p class="color-code">Hex Code</p>
+    <p class="color-code">Hex Code</p>
+    <p class="color-code">Hex Code</p>
+    <p class="color-code">Hex Code</p>
   </footer>
+</div>
 </body>
 <script src="index.js"></script>
 

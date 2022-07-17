@@ -5,6 +5,84 @@
 }
 
 body {
+  display: grid;
+  place-content: center;
   background-color: olive;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
 
+}
+
+h1 {
+  color: whitesmoke;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 300px auto;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+label {
+  display: block;
+  font-size: .8rem;
+  text-align: center;
+}
+header {
+  display: flex;
+  gap: 3rem;
+  align-items: top;
+  padding-bottom: 1rem;
+}
+
+#seleccionar-color {
+  width: 80px;
+  height: 40px;
+}
+
+#color-esquema {
+  font-size: 2rem;
+  margin-top: 6px;
+  color: inherit;
+
+}
+
+button {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: none;
+  background-color: maroon;
+  color: whitesmoke;
+  cursor: pointer;
+  
+}
+
+
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1rem;
+  font-size: .8rem;
+
+}
+
+.color {
+  background-color: aquamarine;
+  height: 300px;
+  width: 20%;
+  
+}
+
+main {
+display: flex;
+box-shadow: 0 0 50px -8px darkgreen;
 }
